@@ -1,4 +1,4 @@
-package com.depaul.se433_project_stay_booking.JwtUtil;
+package com.depaul.se433_project_stay_booking.util;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

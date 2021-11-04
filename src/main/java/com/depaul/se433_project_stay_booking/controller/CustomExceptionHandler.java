@@ -1,6 +1,7 @@
 package com.depaul.se433_project_stay_booking.controller;
 
 import com.depaul.se433_project_stay_booking.exception.UserAlreadyExistException;
+import com.depaul.se433_project_stay_booking.exception.UserNotExistException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -14,10 +15,10 @@ public class CustomExceptionHandler {
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.CONFLICT);
     }
 
-//    @ExceptionHandler(UserNotExistException.class)
-//    public final ResponseEntity<String> handleUserNotExistExceptions(Exception ex, WebRequest request) {
-//        return new ResponseEntity<>(ex.getMessage(), HttpStatus.UNAUTHORIZED);
-//    }
+    @ExceptionHandler(UserNotExistException.class)
+    public final ResponseEntity<String> handleUserNotExistExceptions(Exception ex, WebRequest request) {
+        return new ResponseEntity<>(ex.getMessage(), HttpStatus.UNAUTHORIZED);
+    }
 //
 //    @ExceptionHandler(GCSUploadException.class)
 //    public final ResponseEntity<String> handleGCSUploadExceptions(Exception ex, WebRequest request) {
