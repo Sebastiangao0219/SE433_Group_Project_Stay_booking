@@ -1,0 +1,7 @@
+package com.depaul.se433_project_stay_booking.exception;
+
+public class InvalidStayAddressException extends RuntimeException{
+    public InvalidStayAddressException(String message) {
+        super(message);
+    }
+}
