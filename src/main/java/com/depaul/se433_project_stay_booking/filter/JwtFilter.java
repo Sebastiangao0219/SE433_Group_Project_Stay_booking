@@ -1,6 +1,6 @@
 package com.depaul.se433_project_stay_booking.filter;
 
-import com.depaul.se433_project_stay_booking.JwtUtil.JwtUtil;
+import com.depaul.se433_project_stay_booking.util.JwtUtil;
 import com.depaul.se433_project_stay_booking.model.Authority;
 import com.depaul.se433_project_stay_booking.repository.AuthorityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
