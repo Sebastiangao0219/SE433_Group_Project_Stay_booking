@@ -1,14 +1,18 @@
 package com.depaul.se433_project_stay_booking.controller;
 
+import com.depaul.se433_project_stay_booking.model.Reservation;
 import com.depaul.se433_project_stay_booking.model.Stay;
 import com.depaul.se433_project_stay_booking.model.User;
+import com.depaul.se433_project_stay_booking.service.ReservationService;
 import com.depaul.se433_project_stay_booking.service.StayService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.security.Principal;
 import java.util.List;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 public class StayController {
